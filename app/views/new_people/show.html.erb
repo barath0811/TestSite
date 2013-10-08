@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<%= 'show' %>
+
+<p>
+  <strong>First:</strong>
+  <%= @new_person.first %>
+</p>
+
+<p>
+  <strong>Last:</strong>
+  <%= @new_person.last %>
+</p>
+
+<%= link_to 'Edit', edit_new_person_path(@new_person) %> |
+<%= link_to 'Back', new_people_path %>

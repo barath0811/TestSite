@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestSite</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Test Site</h1>
+<div class="container">
+	<%= yield %>
+</div>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	 <script src=”js/bootstrap.js”></script>
+</body>
+</html>

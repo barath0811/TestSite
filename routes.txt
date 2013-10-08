@@ -1,0 +1,25 @@
+                  Prefix Verb   URI Pattern                                              Controller#Action
+         user_properties GET    /user/properties(.:format)                               user/properties#index
+                         POST   /user/properties(.:format)                               user/properties#create
+       new_user_property GET    /user/properties/new(.:format)                           user/properties#new
+      edit_user_property GET    /user/properties/:id/edit(.:format)                      user/properties#edit
+           user_property GET    /user/properties/:id(.:format)                           user/properties#show
+                         PATCH  /user/properties/:id(.:format)                           user/properties#update
+                         PUT    /user/properties/:id(.:format)                           user/properties#update
+                         DELETE /user/properties/:id(.:format)                           user/properties#destroy
+   new_person_properties GET    /new_people/:new_person_id/properties(.:format)          properties#index
+                         POST   /new_people/:new_person_id/properties(.:format)          properties#create
+ new_new_person_property GET    /new_people/:new_person_id/properties/new(.:format)      properties#new
+edit_new_person_property GET    /new_people/:new_person_id/properties/:id/edit(.:format) properties#edit
+     new_person_property GET    /new_people/:new_person_id/properties/:id(.:format)      properties#show
+                         PATCH  /new_people/:new_person_id/properties/:id(.:format)      properties#update
+                         PUT    /new_people/:new_person_id/properties/:id(.:format)      properties#update
+                         DELETE /new_people/:new_person_id/properties/:id(.:format)      properties#destroy
+              new_people GET    /new_people(.:format)                                    new_people#index
+                         POST   /new_people(.:format)                                    new_people#create
+          new_new_person GET    /new_people/new(.:format)                                new_people#new
+         edit_new_person GET    /new_people/:id/edit(.:format)                           new_people#edit
+              new_person GET    /new_people/:id(.:format)                                new_people#show
+                         PATCH  /new_people/:id(.:format)                                new_people#update
+                         PUT    /new_people/:id(.:format)                                new_people#update
+                         DELETE /new_people/:id(.:format)                                new_people#destroy

@@ -1,0 +1,27 @@
+<h1>Listing gopis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gopis.each do |gopi| %>
+      <tr>
+        <td><%= gopi.name %></td>
+        <td><%= link_to 'Show', gopi %></td>
+        <td><%= link_to 'Edit', edit_gopi_path(gopi) %></td>
+        <td><%= link_to 'Destroy', gopi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gopi', new_gopi_path %>
